@@ -1,0 +1,26 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "john@example.com",
+      "password": "password123",
+      "avatar": "https://ui-avatars.com/api/?name=John+Doe&background=6366f1&color=fff&size=40",
+      "status": "online",
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "password": "password123",
+      "avatar": "https://ui-avatars.com/api/?name=Jane+Smith&background=6366f1&color=fff&size=40",
+      "status": "online",
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z"
+    }
+  ],
+  "messages": [],
+  "chats": []
+}
