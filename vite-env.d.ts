@@ -18,13 +18,13 @@ interface ImportMeta {
   readonly env: ImportMetaEnv;
 }
 
+// SVG
 declare module '*.svg' {
-  import React = require('react');
-  export const ReactComponent: React.FC<React.SVGProps<SVGSVGElement>>;
-  const src: string;
-  export default src;
+  const content: string;
+  export default content;
 }
 
+// Images
 declare module '*.png' {
   const content: string;
   export default content;
@@ -50,6 +50,17 @@ declare module '*.webp' {
   export default content;
 }
 
+declare module '*.ico' {
+  const content: string;
+  export default content;
+}
+
+declare module '*.bmp' {
+  const content: string;
+  export default content;
+}
+
+// CSS Modules
 declare module '*.module.css' {
   const classes: { readonly [key: string]: string };
   export default classes;
@@ -58,4 +69,52 @@ declare module '*.module.css' {
 declare module '*.module.scss' {
   const classes: { readonly [key: string]: string };
   export default classes;
+}
+
+declare module '*.module.sass' {
+  const classes: { readonly [key: string]: string };
+  export default classes;
+}
+
+// Audio/Video
+declare module '*.mp3' {
+  const src: string;
+  export default src;
+}
+
+declare module '*.mp4' {
+  const src: string;
+  export default src;
+}
+
+declare module '*.webm' {
+  const src: string;
+  export default src;
+}
+
+// Fonts
+declare module '*.woff' {
+  const src: string;
+  export default src;
+}
+
+declare module '*.woff2' {
+  const src: string;
+  export default src;
+}
+
+declare module '*.ttf' {
+  const src: string;
+  export default src;
+}
+
+declare module '*.eot' {
+  const src: string;
+  export default src;
+}
+
+// JSON
+declare module '*.json' {
+  const value: any;
+  export default value;
 }
